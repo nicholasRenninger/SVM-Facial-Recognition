@@ -1,2 +1,6 @@
 Code/Matlab Code/libsvm-3_22/* linguist-vendored
-Java linguist-vendored=false
+Java linguist-vendored=true
+C++ linguist-vendored=true
+M4 linguist-vendored=true
+C linguist-vendored=true
+HTML linguist-vendored=true

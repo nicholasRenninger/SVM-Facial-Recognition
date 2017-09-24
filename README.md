@@ -27,7 +27,8 @@ Several strategies to perform multi-class classification with SVM exist. The com
 Results
 =======
 * mainClassifierSVM will take a single photo from the database, remove it from the training set, train the SVM, and then predict which class the chosen photo belongs to.
-![Figure 1](Figures/Faces Matching Class 1.pdf)
+![Figure 1](Figures/PNGs/class_11_img_to_match.PNG)
+![Figure 2](Figures/PNGs/class_11_all_img.PNG)
 
 * mainDecisionBoundaryPlot will take a user-inputted number of classes to work with. For each class:
 1. Create a logical vector (indx) indicating whether an observation is a member of the class.

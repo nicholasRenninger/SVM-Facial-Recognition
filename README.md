@@ -26,13 +26,13 @@ Several strategies to perform multi-class classification with SVM exist. The com
 
 Results
 =======
-⋅⋅*mainClassifierSVM will take a single photo from the database, remove it from the training set, train the SVM, and then predict which class the chosen photo belongs to.
+* mainClassifierSVM will take a single photo from the database, remove it from the training set, train the SVM, and then predict which class the chosen photo belongs to.
 
-⋅⋅*mainDecisionBoundaryPlot will take a user-inputted number of classes to work with. For each class:
+* mainDecisionBoundaryPlot will take a user-inputted number of classes to work with. For each class:
 a) Create a logical vector (indx) indicating whether an observation is a member of the class.
 b) Train an SVM classifier using the predictor data and indx.
 c) Store the classifier in a cell of a cell array.
-Then, create a mesh grid over the normalized 2-D feature space and calculate the score of each class at each point on the grid using the model for each class. The index of the element with the largest score is the index of the class to which the new class observation most likely belongs. Plot the results.
+..* Then, create a mesh grid over the normalized 2-D feature space and calculate the score of each class at each point on the grid using the model for each class. The index of the element with the largest score is the index of the class to which the new class observation most likely belongs. Plot the results.
 
 
 Running the Code

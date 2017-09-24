@@ -26,7 +26,7 @@ Several strategies to perform multi-class classification with SVM exist. The com
 
 Results
 =======
-* mainClassifierSVM will take a single photo from the database, remove it from the training set, train the SVM, and then predict which class the chosen photo belongs to.
+* mainClassifierSVM will take a single photo from the database (Figure 1), remove it from the training set, train the SVM, and then predict which class the chosen photo belongs to (owning class shown in Figure 2):
 ![Figure 1](Figures/PNGs/class_11_img_to_match.PNG)
 ![Figure 2](Figures/PNGs/class_11_all_img.PNG)
 
@@ -34,7 +34,10 @@ Results
 1. Create a logical vector (indx) indicating whether an observation is a member of the class.
 2. Train an SVM classifier using the predictor data and indx.
 3. Store the classifier in a cell of a cell array.
-  * Then, create a mesh grid over the normalized 2-D feature space and calculate the score of each class at each point on the grid using the model for each class. The index of the element with the largest score is the index of the class to which the new class observation most likely belongs. Plot the results.
+  * Then, create a mesh grid over the normalized 2-D feature space and calculate the score of each class at each point on the grid using the model for each class. The index of the element with the largest score is the index of the class to which the new class observation most likely belongs. Plot the results (below the results of classisfication of 4 classes is shown, each using either the eigenfaces or fischerfaces algorithm from Cervantes' code):
+  
+![Figure 3](Figures/PNGs/Classification_Regions_Eigenfaces_Classes_7_22_24_46.PNG)
+![Figure 4](Figures/PNGs/Classification_Regions_Fischerfaces_Classes_7_22_24_46.png)
 
 
 Running the Code
